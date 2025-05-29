@@ -43,7 +43,7 @@ function CollapsibleRow({ row }: { row: RowData }) {
 </td>
 
         <td className="p-2 break-words">{row.ActivityType}</td>
-        <td className="p-2 break-words">{row.CityName}</td>
+        <td className="p-2 break-words">{row.CityName.substring(8, row.CityName.length)}</td>
       </tr>
       {open && (
         <tr className="bg-blue-50 rounded-b-lg">
